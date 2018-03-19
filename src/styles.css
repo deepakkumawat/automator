@@ -1,0 +1,347 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	outline:none;
+}
+p{
+	letter-spacing:-0.5px;
+}
+button{
+	cursor:pointer;
+}
+.form-control{
+	height: 48px;
+	border-radius: 0;
+	box-shadow: none;
+	font-size: 16px;
+	color: #9f9f9f;
+	letter-spacing:-0.5px;
+	border-color:#fff;
+	transition:all .3s;
+}
+.form-control:focus{
+	border-color:#90adff;
+}
+.btn-green{
+	font-weight:700;
+	background:#00920a;
+	border:0;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing:-0.5px;
+	padding:15px 20px;
+	display:inline-block;
+}
+.btn-green:hover{
+	background:#006e08;
+}
+.btn-purple{
+	font-weight:700;
+	background:#90adff;
+	border:0;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing:-0.5px;
+	padding:15px 20px;
+	display:inline-block;
+}
+.btn-purple:hover{
+	background:#698ffa;
+}
+.btn-dark{
+	font-weight:700;
+	background:#000000;
+	border:0;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing:-0.5px;
+	padding:15px 20px;
+	display:inline-block;
+}
+.btn-dark:hover{
+	background:#292929;
+}
+.login-wrapper{
+	background-image:url('assets/images/login-bg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	min-height:100vh;
+	position:relative;
+}
+.login-content{
+	position: absolute;
+	width:100%;
+	top: 50%;
+	transform:translateX(-50%);
+	-webkit-transform:translateY(-50%);
+	margin-top:-40px;
+}
+.login-content h1{
+	color:#fff;
+	font-size:90px;
+	font-weight:700;
+	letter-spacing:-1px;
+	position:relative;
+	line-height:1.1;
+	padding-bottom:30px;
+}
+.login-content h1 span{
+	font-size:50px;
+	display:block;
+}
+.login-content h1:after{
+	content:"";
+	width: 80px;
+	height: 5px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	background:#90adff;
+}
+.login-form{
+	background:rgba(255,255,255,0.88);
+	padding:40px 35px;
+}
+.login-form h2{
+	font-weight:700;
+	color:#000;
+	letter-spacing:-0.5px;
+	border-bottom:1px solid #d6d1d1;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	font-size:30px;
+}
+.login-form .btn-green{
+	display:block;
+	width:100%;
+}
+.footer-content{
+	position:fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+}
+.footer-content p{
+	color: #b7b7b7;
+	margin-bottom:0;
+	border-top: 1px solid rgba(255,255,255,0.09);
+	font-size:14px;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.dasboard-wrapper{
+	min-height:100vh;
+	position:relative;
+	background:#f2f2f2;
+}
+.dasboard-wrapper .footer-content{
+	background:#120f1f;
+}
+.dasboard-wrapper .footer-content p{
+	color:#b7b7b7;
+	text-align:Center;
+}
+.dasboard-wrapper aside{
+	width:300px;
+	background:#1a172c;
+	position:fixed;
+	left:0;
+	top:0;
+	height:calc(100vh - 70px);
+	overflow-y:auto;
+}
+.dasboard-wrapper aside h3{
+	color:#fff;
+	font-size:16px;
+	font-weight:700;
+	text-transform:uppercase;
+	background:#2d2f4f;
+	padding:25px 20px;
+}
+.dasboard-wrapper aside form{
+	padding:10px;
+	margin-top:-5px;
+}
+.dasboard-wrapper aside form input{
+	background:#292447;
+	color:#fff;
+	font-size:14px;
+	border:0;
+	background-image:url('assets/images/search-icon.png');
+	background-repeat:no-repeat;
+	background-position:240px;
+}
+.dasboard-wrapper aside ul{
+	padding:10px;
+}
+.dasboard-wrapper aside ul li{
+	border-bottom:1px solid #000000;
+}
+.dasboard-wrapper aside ul li:last-of-type{
+	border-bottom:0;
+}
+.dasboard-wrapper aside ul li a{
+	display:block;
+	width:100%;
+	color:#fff;
+	font-size:14px;
+	color:#fff;
+	padding:12px;
+}
+.dasboard-wrapper aside ul li a:hover{
+	background:#90adff;
+}
+.main-header{
+	background:#fff;
+	position:fixed;
+	left:300px;
+	width:calc(100% - 300px);
+	top:0;
+	height:70px;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+}
+.main-header p{
+	color:#4f4f4f;
+}
+.main-header p b{
+	color:#000;
+}
+.main-header .btn-purple{
+	width:150px;
+	text-align:center;
+	margin-top:8px;
+}
+.main-content{
+	position:fixed;
+	overflow:auto;
+	top:70px;
+	left:300px;
+	width:calc(100% - 300px);
+	height:calc(100vh - 142px);
+	background-image:url('assets/images/gears-bg.png');
+	background-repeat:no-repeat;
+	background-position: bottom right;
+}
+.bottom-buttons{
+	background:#fff;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	left:0;
+}
+.bottom-buttons button{
+	width:150px;
+	text-align:center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.sidebar{
+	position:absolute;
+	width:300px;
+	right:0;
+	top:0;
+	height:100%;
+	background: #fff;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+	overflow-y:auto;
+}
+.sidebar-heading{
+	background:#19162a;
+	padding:20px;
+	position: relative;
+	padding-right:50px;
+}
+.sidebar-heading h3{
+	font-size:18px;
+	color:#fff;
+}
+.sidebar-heading button{
+	background:none;
+	border:0;
+	position: absolute;
+	right: 5px;
+	top: 25px;
+}
+.sidebar-heading h3{
+	margin-bottom:0;
+}
+.sidebar-heading h3 span{
+	display:block;
+	font-size:14px;
+	color:#a1a1a1;
+	margin-top:8px;
+}
+.sidebar-content{
+	padding:10px 20px 20px;
+}
+.sidebar-content ul li{
+	font-size:14px;
+	padding:10px 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+.sidebar-content ul li:last-of-type{
+	border-bottom:0;
+}
+.sidebar-links{
+	margin-top:30px;
+}
+.sidebar-links li a{
+	color:#19162a;	
+}
+.sidebar-content .sidebar-links li{
+	border-right:1px solid #19162a;
+	padding:0;
+	border-bottom:0;
+	padding-right:10px;
+}
+.sidebar-links li:last-of-type{
+	border-right:0;
+}
+.sidebar-links li:last-of-type a{
+	color:#079111;
+}
+.sidebar-content .sidebar-links li img {
+    vertical-align: -1px;
+}
+.legend-content{
+	position: absolute;
+	left:10px;
+	top:10px;
+	background:rgba(255,255,255,0.8);
+	padding:20px 20px 10px 20px;
+	box-shadow:0px 0px 30px rgba(0,0,0,0.15);
+}
+.legend-content ul{
+	margin:0;
+}
+.legend-content li{
+	font-size:14px;
+	margin-bottom:10px;
+}
+.legend-content li span{
+	width: 45px;
+    height: 26px;
+    display: inline-block;
+    background: #eeeeee;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.legend-content li span.color-red{
+	background: #ff0000;
+}
+.legend-content li span.color-green{
+	background: #079111;
+}
+.legend-content li span.color-orange{
+	background: #ff7c1b;
+}
+.legend-content li span.color-blue{
+	background: #360dac;
+}
+.legend-content li span.color-brown{
+	background: #9b0000;
+}
