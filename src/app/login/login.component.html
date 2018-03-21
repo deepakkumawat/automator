@@ -10,44 +10,49 @@
           <div class="login-form">
             <h2 class="text-uppercase">Login</h2>
             <p class="mb-4">Please fill the following details to login</p>
-            <form>
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-12">
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Username" />
+                    <input [(ngModel)]="registerModel.user" class="form-control" #username="ngModel"
+                      type="text" placeholder="Username" name="username" required/>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
                   <div class="form-group">
-                    <input class="form-control" type="password" placeholder="Password" />
+                    <input [(ngModel)]="registerModel.password" class="form-control" 
+                      type="password" placeholder="Password" name="passwrod" required/>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-9">
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Server Name" />
+                    <input [(ngModel)]="registerModel.host" class="form-control" 
+                      type="text" placeholder="Server Name" name="hostname" required/>
                   </div>
                 </div>
                 <div class="col-3 pl-0">
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Port" />
+                    <input [(ngModel)]="registerModel.port" class="form-control" 
+                      type="text" placeholder="Port" name="portnumber" required/>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Client Name" />
+                    <input [(ngModel)]="registerModel.clientName" class="form-control" 
+                      type="text" placeholder="Client Name" name="clientname" required/>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
                   <div class="form-group mb-0 mt-3">
-                    <button class="btn-green" type="submit">Submit / Discover</button>
+                    <button class="btn-green" type="submit" [disabled]="!loginForm.form.valid">Submit / Discover</button>
                   </div>
                 </div>
               </div>
