@@ -26,7 +26,8 @@ import { RegisterService } from './services/register.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     RegisterService

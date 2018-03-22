@@ -4,5 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiBase: 'https://virtserver.swaggerhub.com/LogicSoft/automator/1.0.0/v1/action/',
+  appName: 'GMS_Test'
 };
